@@ -35,7 +35,7 @@ export function TransactionTable({ filter, onFilterChange }: TransactionTablePro
   const transactions = useSelector((state: RootState) => state.transactions.list)
 
   useEffect(() => {
-    if(transactions && transactions.length >= 1) {
+    if (transactions && transactions.length >= 1) {
       setFilteredTransactions(transactions)
     }
   }, [transactions])
@@ -150,7 +150,7 @@ export function TransactionTable({ filter, onFilterChange }: TransactionTablePro
           <DialogHeader>
             <DialogTitle>Hapus Transaksi</DialogTitle>
             <DialogDescription>
-              Apakah Anda yakin ingin menghapus transaksi "{deletingTransaction?.name}"? Tindakan ini tidak dapat
+              Apakah Anda yakin ingin menghapus transaksi &quot;{deletingTransaction?.name}&quot;? Tindakan ini tidak dapat
               dibatalkan.
             </DialogDescription>
           </DialogHeader>

@@ -29,6 +29,7 @@ export function LoginForm() {
       }
     } catch (err) {
       setError("Terjadi kesalahan saat login")
+      console.error(err)
     } finally {
       setIsLoading(false)
     }
